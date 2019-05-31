@@ -13,3 +13,9 @@
 .StarWars p{
     text-align: center
 }
+
+@media(max-width:500px) {
+    .StarWars ul{
+        max-width: 300px
+    }
+}

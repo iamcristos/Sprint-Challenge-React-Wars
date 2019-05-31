@@ -3,7 +3,6 @@ import React from 'react'
 const DogBreed = (props) =>{
     let breedName = []
     for(let dogbreed in props.props) {
-        console.log(dogbreed, props[dogbreed])
         breedName.push(dogbreed)
     }
     return (

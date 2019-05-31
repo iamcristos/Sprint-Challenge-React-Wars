@@ -1,9 +1,9 @@
 import React from 'react'
 import './StarWars.css'
-const StarWars = ({props})=>{
+const StarWars = ({starChar})=>{
     return (
         <div className='StarWars'>
-           {props.map(starwars=>(
+           {starChar.map(starwars=>(
                <ul key={starwars.name}>
                    <h2 >{starwars.name}</h2>
                    <p> height: {starwars.height}</p>
