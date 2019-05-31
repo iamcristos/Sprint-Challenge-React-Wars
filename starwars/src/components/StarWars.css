@@ -1,0 +1,11 @@
+.StarWars{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+}
+
+.StarWars li{
+    font-size: 2rem;
+    list-style: none;
+    padding: 1.5rem;
+}
