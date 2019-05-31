@@ -8,7 +8,8 @@ class App extends Component {
     this.state = {
       starwarsChars: [],
       next: '',
-      previous: ''
+      previous: '',
+      show: false
     };
   }
 
@@ -38,13 +39,14 @@ class App extends Component {
   previousPropagationHandler = ()=>{
     this.getCharacters(this.state.previous)
   }
-
   render() {
+    let previousBtn = null;
+    this.state.previous === null ? previousBtn = {display: 'none'} : previousBtn = {display:'inline'}
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
         <StarWars props={this.state.starwarsChars}/>
-        <Pagination previousClicked={this.previousPropagationHandler} nextClicked={this.nextPropagationHandler}/>
+        <Pagination previousClicked={this.previousPropagationHandler} nextClicked={this.nextPropagationHandler} previous={previousBtn}/>
       </div>
     );
   }

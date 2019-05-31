@@ -3,8 +3,8 @@ import './Pagination.css';
 const Pagination = props =>{
     return (
         <div className="pagination">
-           <li onClick={props.previousClicked}> Previous</li>
-           <li onClick= {props.nextClicked}> Next </li>
+           <li onClick={props.previousClicked} style={props.previous}> Previous</li>
+           <li onClick= {props.nextClicked}> next </li>
         </div>
     )
 }
