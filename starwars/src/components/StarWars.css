@@ -1,0 +1,21 @@
+.StarWars{
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.StarWars ul{
+    background-color: #C8D5B9;
+    width: 400px;
+    text-align: center;
+    border-radius: .5rem
+}
+.StarWars p{
+    text-align: center
+}
+
+@media(max-width:500px) {
+    .StarWars ul{
+        max-width: 300px
+    }
+}
